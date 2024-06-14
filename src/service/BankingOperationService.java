@@ -45,7 +45,7 @@ public class BankingOperationService {
 
     private void showBalanceAmount() {
         double amount =account.getBalance();
-        System.out.println(amount);
+        System.out.println("Balance: "+amount);
     }
 
     public void depositMoneyMyBankAccount() {
