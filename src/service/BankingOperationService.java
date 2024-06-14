@@ -24,12 +24,14 @@ public class BankingOperationService {
                     1.Deposit money
                     2.Withdraw money
                     3.Transfer money between accounts
+                    4.My Balance
                     """);
             int transaction = scanner.nextInt();
             switch (transaction) {
                 case 1 -> depositMoneyMyBankAccount();
                 case 2 -> withdrawMoneyAndCheckMyBalance();
                 case 3 -> transferMoneyBetweenAccounts();
+                case 4 -> showBalanceAmount();
             }
             System.out.println("""
                     You want to do a new operation?(1 or 2)
@@ -39,6 +41,9 @@ public class BankingOperationService {
             iscontinue = number == 1;
         }
 
+    }
+
+    private void showBalanceAmount() {
     }
 
     public void depositMoneyMyBankAccount() {
